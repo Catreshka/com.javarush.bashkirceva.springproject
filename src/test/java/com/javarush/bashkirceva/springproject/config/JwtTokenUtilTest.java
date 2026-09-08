@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class JwtTokenUtilTest {
 
-    private final JwtTokenUtil jwtTokenUtil = new JwtTokenUtil();
+    private final JwtTokenUtil jwtTokenUtil = new JwtTokenUtil("test-jwt-secret-change-me-32chars-minimum");
 
     @Test
     void generateTokenShouldCreateValidToken() {
